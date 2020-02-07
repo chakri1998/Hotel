@@ -35,11 +35,11 @@ public class AppController {
 	@Autowired
 	HotelService hotelService;
 	
-//	@GetMapping("/")
-//	public String index() {
-//		return "index";
-//	}
-	
+	@GetMapping("/home")
+	public String index() {
+		return "index";
+	}
+/*	
     @RequestMapping("/")
     public String login() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -52,7 +52,7 @@ public class AppController {
         System.out.println("redirecting to home page");
         return "/menu";
     }
-
+*/
 	
 	
 	@GetMapping("/form")
